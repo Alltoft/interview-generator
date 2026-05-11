@@ -1,0 +1,45 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --c-bg:       #121414;
+    --c-surface:  #111111;
+    --c-border:   #1e1e1e;
+    --c-text:     #e8e8e8;
+    --c-muted:    #555555;
+    --c-accent:   #ffffff;
+    --c-dim:      #888888;
+
+    --font-serif: 'Playfair Display', Georgia, serif;
+    --font-sans:  'Inter', -apple-system, sans-serif;
+    --font-mono:  'JetBrains Mono', monospace;
+
+    --ease-out:    cubic-bezier(0.16, 1, 0.3, 1);
+    --ease-in-out: cubic-bezier(0.87, 0, 0.13, 1);
+
+    --max-w:      1200px;
+    --gutter:     clamp(1.5rem, 5vw, 4rem);
+    --section-gap: clamp(6rem, 12vw, 10rem);
+  }
+
+  *, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  html {
+    background: var(--c-bg);
+    color: var(--c-text);
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+  }
+
+  body {
+    overflow-x: hidden;
+  }
+
+  ::selection {
+    background: rgba(255, 255, 255, 0.15);
+  }
+}
