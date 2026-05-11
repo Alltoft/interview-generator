@@ -95,9 +95,11 @@ export default function HowItWorks() {
           <svg
             aria-hidden="true"
             className="connector-line"
+            viewBox="0 0 100 1"
+            preserveAspectRatio="none"
             style={{
               position: 'absolute',
-              top: '2rem',
+              top: '1.25rem',
               left: 0,
               width: '100%',
               height: '2px',
@@ -107,9 +109,10 @@ export default function HowItWorks() {
           >
             <path
               ref={lineRef}
-              d="M 16.6% 0 L 83.3% 0"
+              d="M 16.6 0 L 83.3 0"
               stroke="#1e1e1e"
               strokeWidth="1"
+              vectorEffect="non-scaling-stroke"
               fill="none"
             />
           </svg>
