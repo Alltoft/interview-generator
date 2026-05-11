@@ -159,9 +159,8 @@ export default function Generator({ initialJobTitle = '' }: GeneratorProps) {
                   border: 'none',
                   borderBottom: '1px solid var(--c-border)',
                   padding: '0.75rem 0',
-                  fontFamily: 'var(--font-serif)',
-                  fontStyle: 'italic',
-                  fontSize: '1.2rem',
+                  fontFamily: 'var(--font-sans)',
+                  fontSize: '1rem',
                   color: 'var(--c-text)',
                   outline: 'none',
                 }}

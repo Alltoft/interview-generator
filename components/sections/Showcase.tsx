@@ -139,11 +139,10 @@ export default function Showcase() {
             </p>
             <p
               style={{
-                fontFamily: 'var(--font-serif)',
-                fontSize: '1.05rem',
-                lineHeight: 1.65,
+                fontFamily: 'var(--font-body)',
+                fontSize: '1rem',
+                lineHeight: 1.7,
                 color: 'var(--c-text)',
-                fontStyle: 'italic',
               }}
             >
               &ldquo;{item.question}&rdquo;

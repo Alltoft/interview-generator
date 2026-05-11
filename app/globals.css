@@ -13,6 +13,7 @@
     --font-serif: 'Playfair Display', Georgia, serif;
     --font-sans:  'Inter', -apple-system, sans-serif;
     --font-mono:  'JetBrains Mono', monospace;
+    --font-body:  'Lora', Georgia, serif;
 
     --ease-out:    cubic-bezier(0.16, 1, 0.3, 1);
     --ease-in-out: cubic-bezier(0.87, 0, 0.13, 1);

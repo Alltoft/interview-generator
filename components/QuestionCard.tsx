@@ -42,12 +42,11 @@ export default function QuestionCard({ question, index }: QuestionCardProps) {
 
       <p
         style={{
-          fontFamily: 'var(--font-serif)',
-          fontSize: '1.05rem',
-          lineHeight: 1.6,
+          fontFamily: 'var(--font-body)',
+          fontSize: '1rem',
+          lineHeight: 1.7,
           color: 'var(--c-text)',
           flex: 1,
-          fontStyle: 'italic',
         }}
       >
         {question}

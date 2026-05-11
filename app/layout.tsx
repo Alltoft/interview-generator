@@ -1,5 +1,5 @@
 import type { Metadata } from 'next'
-import { Playfair_Display, Inter, JetBrains_Mono } from 'next/font/google'
+import { Playfair_Display, Inter, JetBrains_Mono, Lora } from 'next/font/google'
 import SmoothScrollProvider from '@/components/providers/SmoothScrollProvider'
 import './globals.css'
 
@@ -21,6 +21,12 @@ const jetbrains = JetBrains_Mono({
   display: 'swap',
 })
 
+const lora = Lora({
+  subsets: ['latin'],
+  variable: '--font-body',
+  display: 'swap',
+})
+
 export const metadata: Metadata = {
   title: 'Interview Generator — Ask the right questions',
   description: 'AI-generated interview questions for any role, instantly.',
@@ -33,7 +39,7 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en" className={`${playfair.variable} ${inter.variable} ${jetbrains.variable}`}>
+    <html lang="en" className={`${playfair.variable} ${inter.variable} ${jetbrains.variable} ${lora.variable}`}>
       <body>
         <SmoothScrollProvider>
           {children}
