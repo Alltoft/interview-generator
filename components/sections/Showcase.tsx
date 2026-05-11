@@ -42,6 +42,21 @@ export default function Showcase() {
       const totalWidth = track.scrollWidth
       const viewportWidth = window.innerWidth
 
+      gsap.fromTo(
+        sectionRef.current,
+        { opacity: 0 },
+        {
+          opacity: 1,
+          ease: 'none',
+          scrollTrigger: {
+            trigger: sectionRef.current,
+            start: 'top 85%',
+            end: 'top 30%',
+            scrub: true,
+          },
+        }
+      )
+
       gsap.to(track, {
         x: -(totalWidth - viewportWidth + 80),
         ease: 'none',

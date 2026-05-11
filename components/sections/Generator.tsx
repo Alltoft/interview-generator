@@ -16,6 +16,8 @@ export default function Generator({ initialJobTitle = '' }: GeneratorProps) {
   const [questions, setQuestions] = useState<string[]>([])
   const [status, setStatus] = useState<Status>('idle')
   const [errorMsg, setErrorMsg] = useState('')
+  const sectionRef = useRef<HTMLElement>(null)
+  const gridRef = useRef<HTMLDivElement>(null)
   const resultsRef = useRef<HTMLDivElement>(null)
 
   useEffect(() => {
@@ -38,6 +40,22 @@ export default function Generator({ initialJobTitle = '' }: GeneratorProps) {
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [initialJobTitle])
+
+  useEffect(() => {
+    const ctx = gsap.context(() => {
+      gsap.to(gridRef.current, {
+        opacity: 0,
+        ease: 'none',
+        scrollTrigger: {
+          trigger: sectionRef.current,
+          start: 'bottom 65%',
+          end: 'bottom top',
+          scrub: 0.4,
+        },
+      })
+    }, sectionRef)
+    return () => ctx.revert()
+  }, [])
 
   async function handleGenerate(title: string) {
     const trimmed = title.trim()
@@ -78,6 +96,7 @@ export default function Generator({ initialJobTitle = '' }: GeneratorProps) {
   return (
     <section
       id="generator"
+      ref={sectionRef}
       style={{
         background: 'var(--c-bg)',
         padding: 'var(--section-gap) var(--gutter)',
@@ -86,6 +105,7 @@ export default function Generator({ initialJobTitle = '' }: GeneratorProps) {
       }}
     >
       <div
+        ref={gridRef}
         style={{
           maxWidth: 'var(--max-w)',
           margin: '0 auto',
@@ -226,6 +246,9 @@ export default function Generator({ initialJobTitle = '' }: GeneratorProps) {
             position: sticky;
             top: 8rem;
             align-self: start;
+            z-index: 10;
+            background: var(--c-bg);
+            padding-right: 2rem;
           }
         }
       `}</style>
