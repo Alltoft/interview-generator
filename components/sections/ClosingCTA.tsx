@@ -139,7 +139,7 @@ export default function ClosingCTA() {
           Built with Next.js + Gemini
         </span>
         <a
-          href="https://github.com"
+          href="https://github.com/Alltoft/interview-generator"
           target="_blank"
           rel="noopener noreferrer"
           style={{ fontFamily: 'var(--font-mono)', fontSize: '0.65rem', color: 'var(--c-muted)', textDecoration: 'none', letterSpacing: '0.08em' }}
