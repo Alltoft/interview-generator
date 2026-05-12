@@ -15,6 +15,9 @@
     --font-mono:  'JetBrains Mono', monospace;
     --font-body:  'Lora', Georgia, serif;
 
+    --c-gold:     #c9973a;
+    --c-gold-dim: rgba(201, 151, 58, 0.12);
+
     --ease-out:    cubic-bezier(0.16, 1, 0.3, 1);
     --ease-in-out: cubic-bezier(0.87, 0, 0.13, 1);
 

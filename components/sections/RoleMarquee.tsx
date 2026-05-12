@@ -75,13 +75,15 @@ function MarqueeRow({ items, direction }: MarqueeRowProps) {
             }}
             onMouseEnter={(e) => {
               const el = e.currentTarget as HTMLElement
-              el.style.color = 'var(--c-text)'
-              el.style.borderColor = 'var(--c-dim)'
+              el.style.color = 'var(--c-gold)'
+              el.style.borderColor = 'rgba(201, 151, 58, 0.5)'
+              el.style.background = 'rgba(201, 151, 58, 0.06)'
             }}
             onMouseLeave={(e) => {
               const el = e.currentTarget as HTMLElement
               el.style.color = 'var(--c-muted)'
               el.style.borderColor = 'var(--c-border)'
+              el.style.background = 'transparent'
             }}
           >
             {item}

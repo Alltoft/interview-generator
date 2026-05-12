@@ -116,6 +116,7 @@ export default function Generator({ initialJobTitle = '' }: GeneratorProps) {
         className="generator-grid"
       >
         <div className="generator-form-panel">
+          <div style={{ width: '2rem', height: '1px', background: 'var(--c-gold)', marginBottom: '2rem', opacity: 0.7 }} />
           <p
             style={{
               fontFamily: 'var(--font-mono)',
@@ -163,7 +164,10 @@ export default function Generator({ initialJobTitle = '' }: GeneratorProps) {
                   fontSize: '1rem',
                   color: 'var(--c-text)',
                   outline: 'none',
+                  transition: 'border-color 0.2s',
                 }}
+                onFocus={(e) => (e.currentTarget.style.borderBottomColor = 'var(--c-gold)')}
+                onBlur={(e) => (e.currentTarget.style.borderBottomColor = 'var(--c-border)')}
               />
             </div>
 

@@ -26,7 +26,7 @@ export default function Nav() {
           fontFamily: 'var(--font-mono)',
           fontSize: '0.7rem',
           letterSpacing: '0.3em',
-          color: 'var(--c-dim)',
+          color: 'var(--c-gold)',
           textTransform: 'uppercase',
         }}
       >

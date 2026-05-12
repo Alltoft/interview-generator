@@ -104,8 +104,8 @@ export default function ClosingCTA() {
           }}
           onMouseEnter={(e) => {
             const el = e.currentTarget as HTMLElement
-            el.style.borderColor = 'var(--c-dim)'
-            el.style.color = 'var(--c-text)'
+            el.style.borderColor = 'var(--c-gold)'
+            el.style.color = 'var(--c-gold)'
           }}
           onMouseLeave={(e) => {
             const el = e.currentTarget as HTMLElement

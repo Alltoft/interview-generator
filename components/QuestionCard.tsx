@@ -19,7 +19,7 @@ export default function QuestionCard({ question, index }: QuestionCardProps) {
   return (
     <div
       style={{
-        borderTop: '1px solid var(--c-border)',
+        borderTop: '1px solid rgba(201, 151, 58, 0.2)',
         padding: '1.5rem 0',
         display: 'flex',
         gap: '1.25rem',
@@ -32,7 +32,7 @@ export default function QuestionCard({ question, index }: QuestionCardProps) {
         style={{
           fontFamily: 'var(--font-mono)',
           fontSize: '0.6rem',
-          color: 'var(--c-muted)',
+          color: 'var(--c-gold)',
           marginTop: '0.2rem',
           minWidth: '1.5rem',
         }}

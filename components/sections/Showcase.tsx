@@ -123,7 +123,10 @@ export default function Showcase() {
               borderRadius: '4px',
               padding: '2rem',
               background: 'var(--c-surface)',
+              transition: 'border-color 0.3s',
             }}
+            onMouseEnter={(e) => (e.currentTarget.style.borderColor = 'rgba(201, 151, 58, 0.45)')}
+            onMouseLeave={(e) => (e.currentTarget.style.borderColor = 'var(--c-border)')}
           >
             <p
               style={{

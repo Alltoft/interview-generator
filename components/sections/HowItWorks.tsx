@@ -110,7 +110,7 @@ export default function HowItWorks() {
             <path
               ref={lineRef}
               d="M 16.6 0 L 83.3 0"
-              stroke="#1e1e1e"
+              stroke="#c9973a"
               strokeWidth="1"
               vectorEffect="non-scaling-stroke"
               fill="none"
@@ -135,17 +135,18 @@ export default function HowItWorks() {
                     width: '2.5rem',
                     height: '2.5rem',
                     borderRadius: '50%',
-                    border: '1px solid var(--c-border)',
+                    border: '1px solid rgba(201, 151, 58, 0.45)',
                     display: 'flex',
                     alignItems: 'center',
                     justifyContent: 'center',
                     marginBottom: '1.5rem',
                     fontFamily: 'var(--font-mono)',
                     fontSize: '0.65rem',
-                    color: 'var(--c-muted)',
-                    background: 'var(--c-bg)',
+                    color: 'var(--c-gold)',
+                    background: 'rgba(201, 151, 58, 0.05)',
                     position: 'relative',
                     zIndex: 1,
+                    boxShadow: '0 0 12px rgba(201, 151, 58, 0.12)',
                   }}
                 >
                   {step.num}

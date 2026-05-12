@@ -66,6 +66,10 @@ export default function Hero({ onSubmit }: HeroProps) {
           className="absolute inset-0"
           style={{ background: 'linear-gradient(to bottom, rgba(18,20,20,0.5) 0%, rgba(18,20,20,0.85) 100%)' }}
         />
+        <div
+          className="absolute inset-0"
+          style={{ background: 'radial-gradient(ellipse 70% 55% at 50% 38%, rgba(201, 151, 58, 0.09) 0%, transparent 70%)', pointerEvents: 'none' }}
+        />
       </div>
 
       <div className="relative z-10 text-center px-[var(--gutter)] max-w-3xl mx-auto w-full">
@@ -134,7 +138,7 @@ export default function Hero({ onSubmit }: HeroProps) {
               color: 'var(--c-text)',
               outline: 'none',
             }}
-            onFocus={(e) => (e.target.style.borderBottomColor = 'var(--c-dim)')}
+            onFocus={(e) => (e.target.style.borderBottomColor = 'var(--c-gold)')}
             onBlur={(e) => (e.target.style.borderBottomColor = 'var(--c-border)')}
           />
           <button
@@ -166,7 +170,7 @@ export default function Hero({ onSubmit }: HeroProps) {
           style={{
             width: '1px',
             height: '48px',
-            background: 'linear-gradient(to bottom, var(--c-dim), transparent)',
+            background: 'linear-gradient(to bottom, var(--c-gold), transparent)',
             animation: 'scrollIndicator 1.8s ease-in-out infinite',
           }}
         />
